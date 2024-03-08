@@ -9,7 +9,6 @@ function runReview2() {
     }
     
     const bank = new Bank()
-    console.log('#Review2: ',bank)
     
     bank.name = 'Santander'
     bank.departments = ['Crédito', 'Contas a pagar', 'Atendimento ao cliente']
@@ -18,7 +17,11 @@ function runReview2() {
         { id: 1, name: 'Ada', account: '12345', digit: 'X'}
     ]
     
-    console.log('#Review2: ',bank)
+    // example of copying an object
+    const bank2 = { ...bank }
+    bank2.description = 'Oi'
+    console.log('#Review2 - bank: ', bank)
+    console.log('#Review2 - bank2: ', bank2)
 }
 
 runReview2()

@@ -40,15 +40,15 @@ function run() {
     ]
 
     const bank = new Bank(name, description, departments, clients)
+    // console.log(bank)
+
+    bank.addDepartment('Análise de risco')
+
     console.log(bank)
 
-    // bank.addDepartment('Análide de risco')
-
-    // console.log(bank)
-
-    // bank.removeDepartment(3)
+    bank.removeDepartment(1)
     
-    // console.log(bank)
+    console.log(bank)
 }
 
 run()
