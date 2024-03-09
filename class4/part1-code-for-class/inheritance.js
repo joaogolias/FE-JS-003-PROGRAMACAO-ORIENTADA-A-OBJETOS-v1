@@ -55,8 +55,8 @@ function runInheritance() {
     console.log('bankAccount: ', bankAccount)
 
     const savingsBankAccount = new SavingsBankAccount('123', '1', 200)
-    savingsBankAccount.addAmount(100)
-    console.log('savingsBankAccount: ', savingsBankAccount.amount)
+    savingsBankAccount.addAmount(100) // addAmount -> #amount: 300; 'Adding savings'
+    console.log('savingsBankAccount: ', savingsBankAccount.amount) // 600
     
 }
 
